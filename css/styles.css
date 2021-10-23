@@ -15,6 +15,10 @@ body {
   text-transform: uppercase;
   user-select: none;
 }
+
+a {
+  color: white;
+}
 /*  HEADER */
 
 .header-wrapper {
@@ -125,7 +129,7 @@ body {
 
 .match-progress {
   justify-content: space-between;
-  width: clamp(300px, 70vw, 800px);;
+  width: clamp(300px, 70vw, 800px);
 }
 
 .choice {
@@ -221,176 +225,177 @@ body {
 }
 
 .reset-score {
-    min-width: 210px;
+  min-width: 210px;
 }
 
 .rules-button {
-    min-width: 150px;
+  min-width: 150px;
 }
 
 .rules-overlay {
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.3);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .rules-popup {
-    background: white;
-    color: hsl(229, 25%, 31%);
-    height: 500px;
-    width: 500px;
-    border-radius: 15px;
-    padding: 50px;
+  background: white;
+  color: hsl(229, 25%, 31%);
+  height: 500px;
+  width: 500px;
+  border-radius: 15px;
+  padding: 50px;
 }
 
-.rules-title{
-    text-align: left;
-    font-size: 2rem;
+.rules-title {
+  text-align: left;
+  font-size: 2rem;
 }
 
 .close-rules {
-    text-align: right;
-    cursor: pointer;
+  text-align: right;
+  cursor: pointer;
 }
 
 .rules-image {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .rules-top-line {
-    display:flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+}
+
+.attribution {
+  margin-top: 50px;
 }
 
 @media screen and (max-width: 1100px) {
-    body {
+  body {
     padding-top: 40px;
+  }
+  .game-area {
+    margin-top: 70px;
+  }
 
-    }
-    .game-area {
-        margin-top: 70px;
-      }
+  .icon-progress {
+    width: 170px;
+    height: 170px;
+  }
 
-    .icon-progress {
-        width: 170px;
-        height: 170px;
-    }
+  .icon-wrapper-progress {
+    width: 230px;
+    height: 230px;
+  }
 
-    .icon-wrapper-progress {
-        width: 230px;
-        height: 230px;
-    }
+  .icon-progress img {
+    width: 100px;
+  }
 
-    .icon-progress img {
-        width: 100px;
-      }
+  .hp-shadow {
+    width: 170px;
+    height: 170px;
+  }
 
-      .hp-shadow {
-        width: 170px;
-        height: 170px;
-      }
+  .win-lose {
+    top: 350px;
+  }
 
-      .win-lose {
-          top: 350px;
-      }
-
-      .rules-block {
-        margin: 150px auto 0 auto;
-      }
+  .rules-block {
+    margin: 150px auto 0 auto;
+  }
 }
 
 @media screen and (max-width: 700px) {
-    body {
-        padding-top: 20px;
-    
-        }
-    
-        .icon-progress {
-            width: 140px;
-            height: 140px;
-        }
-    
-        .icon-wrapper-progress {
-            width: 200px;
-            height: 200px;
-        }
-    
-        .icon-progress img {
-            width: 50px;
-          }
-    
-          .hp-shadow {
-            width: 140px;
-            height: 140px;
-          }
+  body {
+    padding-top: 20px;
+  }
 
-          .choice-title {
-            font-size: 1.2rem;
-          }
-    
-          .win-lose {
-              top: 350px;
-          }
+  .icon-progress {
+    width: 140px;
+    height: 140px;
+  }
 
-          .rules-block {
-            display: block;
-          }
+  .icon-wrapper-progress {
+    width: 200px;
+    height: 200px;
+  }
 
-          .bottom-button {
-            margin: 10px auto;
-            font-size: 1.2rem;
-          }
+  .icon-progress img {
+    width: 50px;
+  }
+
+  .hp-shadow {
+    width: 140px;
+    height: 140px;
+  }
+
+  .choice-title {
+    font-size: 1.2rem;
+  }
+
+  .win-lose {
+    top: 350px;
+  }
+
+  .rules-block {
+    display: block;
+  }
+
+  .bottom-button {
+    margin: 10px auto;
+    font-size: 1.2rem;
+  }
 }
 
 @media screen and (max-width: 500px) {
-    body {
-        padding-top: 10px;
-    
-        }
-    
-        .icon-progress {
-            width: 110px;
-            height: 110px;
-            border-top: 10px solid rgb(216, 216, 216);
-        }
-    
-        .icon-wrapper-progress {
-            width: 160px;
-            height: 160px;
-            border-bottom: 10px solid hsla(0, 0%, 0%, 0.199);
-        }
-    
-        .icon-progress img {
-            width: 50px;
-          }
-    
-          .hp-shadow {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            margin: 50px auto 0 auto;
-          }
+  body {
+    padding-top: 10px;
+  }
 
-          .choice-title {
-            font-size: 1rem;
-          }
-    
-          .win-lose {
-              top: 240px;
-          }
+  .icon-progress {
+    width: 110px;
+    height: 110px;
+    border-top: 10px solid rgb(216, 216, 216);
+  }
 
-          .rules-block {
-            display: block;
-            margin: 70px auto 0 auto;
-          }
+  .icon-wrapper-progress {
+    width: 160px;
+    height: 160px;
+    border-bottom: 10px solid hsla(0, 0%, 0%, 0.199);
+  }
 
-          .bottom-button {
-            margin: 10px auto;
-            font-size: 1.2rem;
-          }
+  .icon-progress img {
+    width: 50px;
+  }
+
+  .hp-shadow {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 50px auto 0 auto;
+  }
+
+  .choice-title {
+    font-size: 1rem;
+  }
+
+  .win-lose {
+    top: 240px;
+  }
+
+  .rules-block {
+    display: block;
+    margin: 70px auto 0 auto;
+  }
+
+  .bottom-button {
+    margin: 10px auto;
+    font-size: 1.2rem;
+  }
 }
