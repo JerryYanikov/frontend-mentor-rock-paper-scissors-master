@@ -1,0 +1,100 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Frontend Mentor | Rock, Paper, Scissors, Lizar, Spock</title>
+</head>
+
+<body>
+  <div class="header-wrapper">
+    <div class="title">
+      Rock Paper Scissors Lizard Spock
+    </div>
+    <div class="score-box">
+      Score
+      <div class="score" id="score"></div>
+    </div>
+  </div>
+
+  <div class="game-area">
+    <section id="matchStart" class="match-start match">
+      <div class="icon-wrapper icon-scissors" id="iconScissors">
+        <div class="icon"><img src="img/icon-scissors.svg" alt="Scissors"></div>
+      </div>
+      <div class="icon-wrapper icon-paper" id="iconPaper">
+        <div class="icon"><img src="img/icon-paper.svg" alt="Paper"></div>
+      </div>
+      <div class="icon-wrapper icon-rock" id="iconRock">
+        <div class="icon"><img src="img/icon-rock.svg" alt="Rock"></div>
+      </div>
+      <div class="icon-wrapper icon-lizard" id="iconLizard">
+        <div class="icon"><img src="img/icon-lizard.svg" alt="Lizard"></div>
+      </div>
+      <div class="icon-wrapper icon-spock" id="iconSpock">
+        <div class="icon"><img src="img/icon-spock.svg" alt="Spock"></div>
+      </div>
+    </section>
+
+    <section id="matchProgress" class="match-progress match">
+      <div class="choice">
+        <p class="choice-title">You Picked</p>
+        <div class="icon-wrapper-progress" id="playerSelect">
+          <div class="icon-progress" id="playerIcon"></div>
+        </div>
+      </div>
+      <div class="choice">
+        <p class="choice-title" id="housePickText">The House Still Picking...</p>
+        <div class="hp-shadow" id="shadow"></div>
+        <div class="icon-wrapper-progress" id="computerSelect">
+          <div class="icon-progress" id="computerIcon"></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="win-lose" id='winLose'>
+      <div class="ststus" id="status"></div>
+      <div class="play-again" id="playAgain">Play Again</div>
+    </div>
+  </div>
+
+
+  <div class="rules-block" >
+    <div class="bottom-button reset-score" id="resetScore">Reset score</div>
+    <div class="bottom-button rules-button" id="rules">Rules</div>
+  </div>
+  <div class="rules-overlay" id="rulesOverlay">
+    <div class="rules-popup">
+      <div class="rules-top-line">
+        <div class="rules-title">Rules</div>
+        <div class="close-rules" id="closeRules">
+          <img src="img/icon-close.svg" alt="close rules popup">
+        </div>
+      </div>
+      <img src="img/image-rules-bonus.svg" alt="rules" class="rules-image">
+    </div>
+  </div>
+
+  <!--
+  
+    You Win
+    You Lose
+  
+    Play Again
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.-->
+
+  <script src="scripts/scripts.js"></script>
+</body>
+
+</html>
